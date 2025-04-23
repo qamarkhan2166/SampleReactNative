@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform , FlatList, Text,} from 'react-native';
+import { Image, StyleSheet, Platform, FlatList, Text, } from 'react-native';
 
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
@@ -10,29 +10,29 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ThemedView style={styles.container}>
-      <ThemedText type="title" style={styles.title}>Activity History</ThemedText>
-      console.log("mockActivities", mockActivities);
+        <ThemedText type="title" style={styles.title}>Activity History</ThemedText>
+        console.log("mockActivities", mockActivities);
 
-      <FlatList
-  data={mockActivities}
-  renderItem={({ item }) => <ActivityItem item={item} />}
-  keyExtractor={(item) => item.sessionId.toString()}
-  style={styles.list}
-  contentContainerStyle={[styles.listContent, { flexGrow: 1 }]}
-  ListEmptyComponent={
-    <Text style={{ textAlign: 'center', marginTop: 20 }}>
-      No activities found
-    </Text>
-  }
-/>
-    </ThemedView>
+        <FlatList
+          data={mockActivities}
+          renderItem={({ item }) => <ActivityItem item={item} />}
+          keyExtractor={(item) => item.sessionId.toString()}
+          style={styles.list}
+          contentContainerStyle={[styles.listContent, { flexGrow: 1 }]}
+          ListEmptyComponent={
+            <Text style={{ textAlign: 'center', marginTop: 20 }}>
+              No activities found
+            </Text>
+          }
+        />
+      </ThemedView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Crucial - ensures the container takes full height
+    flex: 1,
   },
   title: {
     padding: 16,
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   list: {
-    flex: 1, // Crucial - allows FlatList to expand
+    flex: 1,
   },
   listContent: {
     paddingHorizontal: 16,

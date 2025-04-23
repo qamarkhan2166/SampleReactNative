@@ -16,7 +16,7 @@ export const mockActivities: ActivityTrackerUiState[] = [
   {
     sessionId: 1,
     currentActivity: "WALKING",
-    activityDuration: 1200000, // 20 minutes
+    activityDuration: 1200000,
     isActivityStarted: true,
     totalDistance: 1200,
     currentLight: 300,
@@ -26,7 +26,7 @@ export const mockActivities: ActivityTrackerUiState[] = [
   {
     sessionId: 2,
     currentActivity: "RUNNING",
-    activityDuration: 1800000, // 30 minutes
+    activityDuration: 1800000,
     isActivityStarted: true,
     totalDistance: 5000,
     currentLight: 500,
@@ -36,7 +36,7 @@ export const mockActivities: ActivityTrackerUiState[] = [
   {
     sessionId: 3,
     currentActivity: "RUNNING",
-    activityDuration: 1800000, // 30 minutes
+    activityDuration: 1800000,
     isActivityStarted: true,
     totalDistance: 5000,
     currentLight: 500,
@@ -46,7 +46,7 @@ export const mockActivities: ActivityTrackerUiState[] = [
   {
     sessionId: 4,
     currentActivity: "RUNNING",
-    activityDuration: 1800000, // 30 minutes
+    activityDuration: 1800000,
     isActivityStarted: true,
     totalDistance: 5000,
     currentLight: 500,
@@ -56,7 +56,7 @@ export const mockActivities: ActivityTrackerUiState[] = [
   {
     sessionId: 5,
     currentActivity: "RUNNING",
-    activityDuration: 1800000, // 30 minutes
+    activityDuration: 1800000,
     isActivityStarted: true,
     totalDistance: 5000,
     currentLight: 500,
@@ -66,7 +66,7 @@ export const mockActivities: ActivityTrackerUiState[] = [
   {
     sessionId: 6,
     currentActivity: "RUNNING",
-    activityDuration: 1800000, // 30 minutes
+    activityDuration: 1800000,
     isActivityStarted: true,
     totalDistance: 5000,
     currentLight: 500,
@@ -76,12 +76,11 @@ export const mockActivities: ActivityTrackerUiState[] = [
   {
     sessionId: 7,
     currentActivity: "RUNNING",
-    activityDuration: 1800000, // 30 minutes
+    activityDuration: 1800000,
     isActivityStarted: true,
     totalDistance: 5000,
     currentLight: 500,
     currentPressure: 1010,
     timestamp: "2023-11-14T17:45:00"
   },
-  // Add more mock data...
 ];
